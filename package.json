@@ -1,6 +1,16 @@
 {
   "name": "button-coderfox",
   "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/button-component.umd.js",
+  "module": "./dist/button-component.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/button-component.mjs",
+      "require": "./dist/button-component.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",

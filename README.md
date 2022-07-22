@@ -1,10 +1,10 @@
 # button-coderfox
 
-This template should help get you started developing with Vue 3 in Vite.
+This the ButtonCoderFox Component
 
-## Recommended IDE Setup
+## How to build the library
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+To build the library, the developer just have to run the following command is his terminal `npm run build-only`. After that command, the dist folder will be created.
 
 ## Type Support for `.vue` Imports in TS
 
