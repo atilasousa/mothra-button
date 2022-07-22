@@ -3,7 +3,6 @@
         <div class="cf-button-icon">
             <slot name="icon" />
         </div>
-        <slot />
         <span v-if="!loading && iconPosition !== 'onlyIcon'" class="cf-button-label">
             <slot name="label" />
         </span>
