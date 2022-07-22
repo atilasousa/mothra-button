@@ -62,13 +62,11 @@ export const Small: StoryFn<typeof ButtonComponent> = Template.bind({});
 Small.args = {
   size: "sm",
   label: "Button",
-  icon: "icone",
 };
 export const Medium: StoryFn<typeof ButtonComponent> = Template.bind({});
 Medium.args = {
   size: "md",
   label: "Button",
-  icon: "icone",
 };
 export const Large: StoryFn<typeof ButtonComponent> = Template.bind({});
 Large.args = {
