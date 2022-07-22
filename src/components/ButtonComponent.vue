@@ -6,6 +6,9 @@
         <span v-if="!loading && iconPosition !== 'onlyIcon'" class="cf-button-label">
             <slot name="label" />
         </span>
+        <span v-if="!slots.icon && iconPosition === 'onlyIcon'">
+            Insira um icone
+        </span>
         <LoadingComponent :size="size" v-if="loading" />
     </button>
 </template>
