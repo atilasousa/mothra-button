@@ -2,7 +2,9 @@
   "name": "button-coderfox",
   "version": "0.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/button-component.umd.js",
   "module": "./dist/button-component.mjs",
   "exports": {
@@ -17,7 +19,9 @@
     "preview": "vite preview --port 4173",
     "test:unit": "vitest --environment jsdom",
     "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false"
+    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -28,17 +32,27 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-vite": "^0.2.0",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue3": "^6.5.9",
     "@types/jsdom": "^16.2.14",
     "@types/node": "^16.11.45",
     "@vitejs/plugin-vue": "^3.0.1",
     "@vue/test-utils": "^2.0.2",
     "@vue/tsconfig": "^0.1.3",
+    "babel-loader": "^8.2.5",
     "jsdom": "^20.0.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.53.0",
     "typescript": "~4.7.4",
     "vite": "^3.0.1",
     "vitest": "^0.18.1",
+    "vue-loader": "^16.8.3",
     "vue-tsc": "^0.38.8"
   }
 }

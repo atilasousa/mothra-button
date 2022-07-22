@@ -1,5 +1,5 @@
 <template>
-    <button @click="onClick()" class="cf-button" :class="getClasses()" :disabled="isDisabled">
+    <button @click="onClick()" class="cf-button" :class="getClasses()" :disabled="isDisabled || loading">
         <div class="cf-button-icon">
             <slot name="icon"/>
         </div>
