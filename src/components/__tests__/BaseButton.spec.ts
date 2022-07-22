@@ -74,8 +74,8 @@ describe('ButtonComponent / Checking if component is loading',()=>{
   })
 })
 
-describe('ButtonComponent / Checking if event click is being emitted',()=>{
-  it('check if LoadingComponent is rendered', async()=>{
+describe('ButtonComponent / Checking click event',()=>{
+  it('check if event click is being emitted', async()=>{
     const wrapper = mount(ButtonComponent);
     const button = wrapper.find("button");
 
