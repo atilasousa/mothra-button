@@ -64,11 +64,9 @@ $primary: #2a9d8f;
     background-color: $primary;
     cursor: pointer;
     margin-bottom: 0.5rem;
-
     &:hover {
         background-color: rgb($primary, 0.8);
     }
-
     &:disabled {
         background-color: rgb($primary, 0.6);
         cursor: auto;
@@ -76,7 +74,6 @@ $primary: #2a9d8f;
 }
 
 .cf-button-icon-left {
-
     .cf-button-icon {
         margin-right: 0.5rem;
     }
@@ -84,7 +81,6 @@ $primary: #2a9d8f;
 
 .cf-button-icon-right {
     flex-direction: row-reverse;
-
     .cf-button-icon {
         margin-left: 0.5rem;
     }
@@ -100,14 +96,12 @@ $primary: #2a9d8f;
     padding: 0.45rem 0.7rem;
     font-size: 0.85rem;
     border-radius: 0.4rem;
-
 }
 
 .cf-button-md {
     padding: 0.6rem 1rem;
     font-size: .95rem;
     border-radius: 0.6em;
-
 }
 
 .cf-button-lg {
