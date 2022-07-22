@@ -74,3 +74,14 @@ describe('ButtonComponent / Checking if component is loading',()=>{
   })
 })
 
+describe('ButtonComponent / Checking if event click is being emitted',()=>{
+  it('check if LoadingComponent is rendered', async()=>{
+    const wrapper = mount(ButtonComponent);
+    const button = wrapper.find("button");
+
+    await button.trigger("click");
+    expect(wrapper.emitted().click).toBeTruthy();
+
+  })
+})
+
