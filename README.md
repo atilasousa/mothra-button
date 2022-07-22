@@ -2,6 +2,16 @@
 
 This the ButtonCoderFox Component
 
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run dev
+```
+
 ## How to build the library
 
 To build the library, the developer just have to run the following command is his terminal `npm run build-only`. After that command, the dist folder will be created.
