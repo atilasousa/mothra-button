@@ -6,7 +6,16 @@ This the ButtonCoderFox Component
 
 To build the library, the developer just have to run the following command is his terminal `npm run build-only`. After that command, the dist folder will be created.
 
-## Type Support for `.vue` Imports in TS
+## Storybook
+
+### How to run Storybook
+
+To run storybook, you need to run `npm run storybook`, and it will be available on port 6006.
+Access the storybook with this link `http://localhost:6006/` 
+
+### How to buld Storybook
+
+To build storybook, run the command `npm run build-storybook`, after you will see in your project a folder named storybook-static.
 
 TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
