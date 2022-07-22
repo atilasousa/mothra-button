@@ -15,4 +15,4 @@ Access the storybook with this link `http://localhost:6006/`.
 
 ### How to build Storybook
 
-To build storybook, run the command `npm run build-storybook`, after you will see in your project a folder named storybook-static.
+To build storybook, run the command `npm run build-storybook`, after you will see in your project a folder named storybook-static, and you can acess the component stories in that folder.

@@ -6,7 +6,7 @@ import BaseButton from './components/ButtonComponent.vue'
   <div class="container">
     <div class="button-demonstration">
       <h4>Small</h4>
-      <base-button size="sm">
+      <base-button size="sm" background-color="#9d2a2a">
         <template #label>
           Medium
         </template>

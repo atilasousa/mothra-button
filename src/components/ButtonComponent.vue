@@ -1,11 +1,11 @@
 <template>
     <button @click="onClick()" class="cf-button" :class="getClasses()" :disabled="isDisabled || loading">
         <div class="cf-button-icon">
-            <slot name="icon"/>
+            <slot name="icon" />
         </div>
-        <slot/>
+        <slot />
         <span v-if="!loading && iconPosition !== 'onlyIcon'" class="cf-button-label">
-            <slot name="label"/>
+            <slot name="label" />
         </span>
         <LoadingComponent :size="size" v-if="loading" />
     </button>
@@ -13,11 +13,11 @@
 <script lang="ts" setup>
 import { useSlots } from 'vue';
 import LoadingComponent from './LoadingComponent.vue';
-const slots = useSlots()
+const slots = useSlots();
 
 const emit = defineEmits<{
-  (e: 'click'): void
-}>()
+    (e: 'click'): void
+}>();
 
 const props = withDefaults(defineProps<{
     backgroundColor?: string;
@@ -31,7 +31,10 @@ const props = withDefaults(defineProps<{
     isDisabled: false,
     iconPosition: "left",
     loading: false
-})
+});
+
+const buttonHover: string = props.backgroundColor + 'c2';
+const buttonDisabled: string = props.backgroundColor + '71';
 
 function getClasses(): Array<string | object> {
     return [
@@ -41,17 +44,15 @@ function getClasses(): Array<string | object> {
             'cf-button-icon-left': slots.icon && props.iconPosition === 'left' && slots.label,
             'cf-button-onlyIcon-loading': slots.icon && props.loading && props.iconPosition === 'onlyIcon'
         },
-        { 'loading': props.loading }
+        { 'loading': props.loading },
     ]
 }
-function onClick(){
+function onClick() {
     emit('click');
 }
 
 </script>
 <style lang="scss">
-$primary: #2a9d8f;
-
 .cf-button {
     transition: 0.3s;
     border: none;
@@ -61,14 +62,16 @@ $primary: #2a9d8f;
     outline: none;
     color: white;
     font-weight: 500;
-    background-color: $primary;
+    background-color: v-bind(backgroundColor);
     cursor: pointer;
     margin-bottom: 0.5rem;
+
     &:hover {
-        background-color: rgb($primary, 0.8);
+        background-color: v-bind(buttonHover);
     }
+
     &:disabled {
-        background-color: rgb($primary, 0.6);
+        background-color: v-bind(buttonDisabled);
         cursor: auto;
     }
 }
@@ -81,6 +84,7 @@ $primary: #2a9d8f;
 
 .cf-button-icon-right {
     flex-direction: row-reverse;
+
     .cf-button-icon {
         margin-left: 0.5rem;
     }
