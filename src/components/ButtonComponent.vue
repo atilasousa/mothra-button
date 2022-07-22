@@ -29,7 +29,7 @@ const props = withDefaults(defineProps<{
     size: "md",
     isDisabled: false,
     iconPosition: "left",
-    loading: false
+    loading: false,
 });
 
 const buttonHover: string = props.backgroundColor + 'c2';
@@ -44,7 +44,7 @@ function getClasses(): Array<string | object> {
             'cf-button-onlyIcon-loading': slots.icon && props.loading && props.iconPosition === 'onlyIcon'
         },
         { 'loading': props.loading },
-    ]
+    ];
 }
 function onClick() {
     emit('click');

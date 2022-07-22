@@ -6,3 +6,10 @@ exports[`BaseButton > Checking if component is rendered 1`] = `
   <!--v-if-->
 </button>"
 `;
+
+exports[`ButtonComponent > Checking if component is rendered 1`] = `
+"<button class=\\"cf-button cf-button-md\\">
+  <div class=\\"cf-button-icon\\"></div><span class=\\"cf-button-label\\"></span>
+  <!--v-if-->
+</button>"
+`;
