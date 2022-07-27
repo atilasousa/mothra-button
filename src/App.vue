@@ -73,6 +73,8 @@ import BaseButton from './components/ButtonComponent.vue';
 
 <style scoped lang="scss">
 .container {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   padding-top: 5rem;
   display: flex;
   justify-content: space-around;
